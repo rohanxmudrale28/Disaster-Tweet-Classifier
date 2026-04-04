@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: disaster-tweet-service
+  labels:
+    app: disaster-tweet-classifier
+spec:
+  selector:
+    app: disaster-tweet-classifier
+  ports:
+  - name: http
+    protocol: TCP
+    port: 80               # External port
+    targetPort: 5000       # Flask app port inside container
+  type: NodePort           # Exposes the app on each Node's IP
+                           # Change to LoadBalancer if using cloud (Azure/GCP/AWS)
