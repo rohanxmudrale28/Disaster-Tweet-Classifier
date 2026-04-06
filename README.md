@@ -8,7 +8,7 @@ A deep learning web application that classifies tweets as **disaster** or **not 
 
 | Name  | Role |
 |-------|------|
-| [Your Name] | Project Lead — Model, Flask API, Docker, Jenkins, Kubernetes |
+| Rohan | Project Lead — Model, Flask API, Docker, Jenkins, Kubernetes |
 | Shawn | Documentation & README |
 | Parth | Unit Testing |
 
