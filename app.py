@@ -1,3 +1,4 @@
+from flask_cors import CORS
 import os
 import re
 import pickle
@@ -7,6 +8,7 @@ import tensorflow as tf
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 app = Flask(__name__)
+CORS(app)
 
 MAX_SEQUENCE_LENGTH = 100
 
